@@ -1,0 +1,102 @@
+/**General**/
+:root
+{
+    --violet: #9356dc;
+    --rose: #ff79da;
+    --vert: #99e2d0;
+}
+
+body
+{
+    font-family: roboto;
+    margin: 0;
+    font-size: 18px;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+ul
+{
+    list-style-type: none;
+}
+h1
+{
+    font-size: 130%;
+}
+/** header**/
+header
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+#logo img
+{
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.recherche
+{
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+    background-color: #eaeaea;
+    width: 100%;
+    border-top: 2px solid rgba(173, 173, 173, 0.34);
+    border-bottom: 1px solid rgba(173,173,173,0.34);
+}
+.recherche input
+{
+    border: none;
+    background-color: #eaeaea;
+}
+.recherche input::placeholder
+{
+    color: black;
+    font-weight: bold;
+}
+.recherche .fa-location-dot
+{
+    display: inline-block;
+    color: black;
+    padding: 5px;
+}
+
+.rez
+{
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.soustitre
+{
+    font-size: 15px;
+    padding-top: 0px;
+    padding-bottom: 25px;
+}
+
+.bouton1
+{
+    border-radius: 50px;
+    font-weight: bold;
+    color: white;
+    background: var(--rose);
+    background: linear-gradient(to bottom, var(--rose) 0%, var(--violet) 100%);
+    height: 42px;
+    width: 176px;
+    border: none;
+    font-size: 70%;
+    padding: 10px;
+}
