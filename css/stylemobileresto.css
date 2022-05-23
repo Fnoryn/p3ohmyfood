@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/** général **/
+body {
+  font-family: roboto;
+  margin: 0;
+  font-size: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/** header**/
+header .top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+}
+header .top .fa-solid {
+  font-weight: bold;
+  font-size: large;
+}
+header .top .top__logo {
+  width: 50%;
+}
+
+.top__BG {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.mainmenu {
+  margin-top: -60px;
+  border-radius: 32px 32px 0px 0px;
+  background-color: #f6f6f6;
+  position: relative;
+}
+.mainmenu__header {
+  padding: 16px 32px 0px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainmenu__T1 {
+  font-family: Shrikhand;
+  font-weight: bold;
+}
+.mainmenu__btn {
+  background-color: transparent;
+  border: transparent 0px solid;
+}
+
+.menus {
+  display: grid;
+}
+
+.menu {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0px 16px;
+}
+.menu__T1 {
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  font-weight: normal;
+  border-bottom: 3px solid #99e2d0;
+  width: 11%;
+}
+
+.menucarte {
+  background-color: #fff;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  margin: 16px 0px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+.menucarte__div {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menucarte__T2 {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menucarte__p {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menucarte__prix {
+  font-weight: bold;
+  display: flex;
+  align-items: end;
+  padding-left: 8px;
+}
+
+.commanderbtn {
+  padding: 10px;
+  border-radius: 130px;
+  font-size: large;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #ff79da 10%, #9356dc 100%);
+  display: flex;
+  color: #fff;
+  width: 180px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 20px 15px;
+  line-height: 25px;
+  background-color: #353535;
+  color: #fff;
+}
+.footer .fa-solid {
+  padding-right: 10px;
+}
+.footer h2 {
+  font-family: Shrikhand;
+  font-weight: lighter;
+  font-size: 16px;
+}
+.footer a {
+  color: #fff;
+}
