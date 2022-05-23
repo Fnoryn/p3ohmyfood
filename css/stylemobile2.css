@@ -20,7 +20,7 @@ a {
   color: black;
 }
 
-.nav, .menu__top, header {
+.nav, .menutop, header {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@ a {
   border-radius: 15px 15px 0px 0px;
 }
 
-header .logo__img {
+header .logoimg {
   width: 70%;
   padding: 5px;
 }
@@ -46,12 +46,12 @@ header .recherche {
   padding: 15px;
 }
 
-.menu__top {
+.menutop {
   align-items: center;
   padding: 15px 0px 20px 0px;
   background-color: #f6f6f6;
 }
-.menu__top__btn {
+.menutop .menubtn {
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
   background: linear-gradient(to bottom, #ff79da 5%, #9356dc 100%);
   border-radius: 25px;
@@ -72,10 +72,10 @@ header .recherche {
   text-align: left;
   padding: 0px 0px 0px 10px;
 }
-.nav .nav__bar .fa-solid {
+.nav .navbar .fa-solid {
   padding-right: 25px;
 }
-.nav .nav__bar a {
+.nav .navbar a {
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 14px;

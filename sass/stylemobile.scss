@@ -45,7 +45,7 @@ a{
     border-radius: 15px 15px 0px 0px;
 }
 
-@mixin btn {
+@mixin btn{
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
     background:linear-gradient(to bottom, $secondarycolor 5%, $primarycolor 100%);
     border-radius:25px;
@@ -75,10 +75,10 @@ a{
     font-weight: bold;
     padding: 30px 45px;
 }
-/ header /
+
 header{
     @extend %block;
-    .logoimg{
+    .logo__img{
         width: 70%;
         padding: 5px;
     }
@@ -89,12 +89,12 @@ header{
     }
 }
 
-.menutop{
+.menu__top{
     @extend %block;
     align-items: center;
     padding: 15px 0px 20px 0px;
     background-color: $secondgray;
-    .menubtn{
+    &__btn{
         @include btn();
     }
 }
@@ -105,12 +105,12 @@ header{
         text-align: left;
         padding: 0px 0px 0px 10px;
     }
-    .navbar{
+    .nav__bar{
         .fa-solid{
             padding-right: 25px;
         }
         a{
-            @include btnF();
+            @include btn__F();
         }
     }
 }
