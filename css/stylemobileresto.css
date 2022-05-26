@@ -30,8 +30,9 @@ header .top .top__logo {
 }
 
 .top__BG {
-  max-height: 500px;
+  max-height: 250px;
   width: 100%;
+  object-position: 0% 77%;
   object-fit: cover;
 }
 
@@ -108,17 +109,23 @@ header .top .top__logo {
   padding-left: 8px;
 }
 
-.commanderbtn {
+.maincommander {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  height: 150px;
+}
+.maincommander__btn {
   padding: 10px;
   border-radius: 130px;
   font-size: large;
   cursor: pointer;
   background: linear-gradient(to bottom, #ff79da 10%, #9356dc 100%);
-  display: flex;
   color: #fff;
+  display: inline-block;
   width: 180px;
-  align-items: center;
-  justify-content: center;
+  height: 15%;
+  text-align: center;
 }
 
 .footer {

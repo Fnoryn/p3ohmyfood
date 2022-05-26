@@ -51,7 +51,7 @@ header .recherche {
   padding: 15px 0px 20px 0px;
   background-color: #f6f6f6;
 }
-.menu__top__btn {
+.menu__top .menu__btn {
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
   background: linear-gradient(to bottom, #ff79da 5%, #9356dc 100%);
   border-radius: 25px;
@@ -92,12 +92,19 @@ header .recherche {
 .resto {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #eaeaea;
   margin-top: 30px;
 }
 .resto h2 {
   padding-left: 20px;
+}
+.resto__new {
+  display: none;
+  padding: 8px;
+  border-radius: 2px;
+  background-color: #99e2d0;
+  color: #00644b;
 }
 .resto__article {
   background-color: #fff;
@@ -107,13 +114,13 @@ header .recherche {
 }
 .resto__contenu {
   padding-left: 15px;
+  padding: 8px;
   line-height: 7px;
 }
 .resto__btn {
-  display: none;
-  justify-content: flex-end;
-  background-color: transparent;
-  border: transparent 0px solid;
+  align-items: center;
+  text-align: end;
+  padding-left: 8px;
 }
 
 .footer {

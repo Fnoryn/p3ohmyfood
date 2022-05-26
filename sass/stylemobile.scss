@@ -94,7 +94,7 @@ header{
     align-items: center;
     padding: 15px 0px 20px 0px;
     background-color: $secondgray;
-    &__btn{
+    .menu__btn{
         @include btn();
     }
 }
@@ -117,11 +117,18 @@ header{
 .resto{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     background-color: $firstgray;
     margin-top: 30px;
     h2{
         padding-left: 20px;
+    }
+    &__new{
+        display: none;
+        padding: 8px;
+        border-radius: 2px;
+        background-color: $thirdcolor;
+        color: #00644b;
     }
     &__article{
         background-color: #fff;
@@ -134,13 +141,13 @@ header{
     }
     &__contenu{
         padding-left: 15px;
+        padding: 8px;
         line-height: 7px;
     }
     &__btn{
-        display: none;
-        justify-content: flex-end;
-        background-color: transparent;
-        border: transparent 0px solid;
+        align-items:center;
+        text-align: end;
+        padding-left: 8px;
     }
 }
 
