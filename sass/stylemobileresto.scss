@@ -1,11 +1,11 @@
 /** général **/
 
-$primary__color: #9356dc;
-$secondary__color: #ff79da;
-$third__color: #99e2d0;
-$first__gray: #eaeaea;
-$second__gray: #f6f6f6;
-$third__gray: #353535;
+$primarycolor: #9356dc;
+$secondarycolor: #ff79da;
+$thirdcolor: #99e2d0;
+$firstgray: #eaeaea;
+$secondgray: #f6f6f6;
+$thirdgray: #353535;
 
 body{
     font-family: roboto;
@@ -17,6 +17,16 @@ body{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+@mixin animheart1{
+    background: -moz-linear-gradient(50deg, $primarycolor, $secondarycolor);
+    background: -webkit-linear-gradient(50deg, $primarycolor, $secondarycolor);
+    background: linear-gradient(50deg, $primarycolor, $secondarycolor);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
 }
 a{
     text-decoration: none;
@@ -53,7 +63,7 @@ header{
 .mainmenu{
     margin-top: -60px;
     border-radius: 32px 32px 0px 0px;
-    background-color: $second__gray;
+    background-color: $secondgray;
     position: relative;
     &__header{
         padding: 16px 32px 0px 16px;
@@ -65,9 +75,8 @@ header{
         font-family: Shrikhand;
         font-weight: bold;
     }
-    &__btn{
-        background-color: transparent;
-        border: transparent 0px solid;
+    &__heart1:hover{
+        @include animheart1();
     }
 }
 
@@ -84,7 +93,7 @@ header{
         text-transform: uppercase;
         padding-bottom: 8px;
         font-weight: normal;
-        border-bottom: 3px solid $third__color;
+        border-bottom: 3px solid $thirdcolor;
         width: 11%;
     }
 }
@@ -130,7 +139,7 @@ header{
     border-radius: 130px;
     font-size: large;
     cursor: pointer;
-    background: linear-gradient(to bottom, $secondary__color 10%, $primary__color 100%);
+    background: linear-gradient(to bottom, $secondarycolor 10%, $primarycolor 100%);
     color: #fff;
     display: inline-block;
     width: 180px;
@@ -144,7 +153,7 @@ header{
     flex-direction: column;
     padding: 0px 0px 20px 15px;
     line-height: 25px;
-    background-color: $third__gray;
+    background-color: $thirdgray;
     color: #fff;
     .fa-solid{
         padding-right: 10px;

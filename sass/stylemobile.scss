@@ -62,6 +62,26 @@ a{
     text-shadow:0px 1px 0px $primarycolor;
 }
 
+@mixin animheart1{
+    background: -moz-linear-gradient(50deg, $primarycolor, $secondarycolor);
+    background: -webkit-linear-gradient(50deg, $primarycolor, $secondarycolor);
+    background: linear-gradient(50deg, $primarycolor, $secondarycolor);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+@mixin animscale {
+    transform: scale(1.05);
+    transition-duration: 800ms;
+}
+
+@mixin animebgcolor {
+    background: lighten($color: $primarycolor, $amount: 30);
+}
+
 @mixin btn__F {
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
     background-color: #fff;
@@ -97,6 +117,9 @@ header{
     .menu__btn{
         @include btn();
     }
+    .menu__btn:hover{
+        @include animscale();
+    }
 }
 
 .nav{
@@ -108,9 +131,18 @@ header{
     .nav__bar{
         .fa-solid{
             padding-right: 25px;
+            color: gray;
         }
+
         a{
             @include btn__F();
+        }
+        a:hover{
+            @include animscale();
+            @include animebgcolor();
+            .fa-solid{
+                color: $primarycolor;
+            }
         }
     }
 }
@@ -125,8 +157,8 @@ header{
     }
     &__new{
         position: relative;
-        bottom: 150px;
-        left: 216px;
+        bottom: 154px;
+        left: 204px;
         padding: 8px;
         border-radius: 2px;
         background-color: $thirdcolor;
@@ -137,6 +169,9 @@ header{
         margin: 20px;
         height: 250px;
         border-radius: 15px;
+    }
+    &__article:hover{
+        @include animscale();
     }
     &__img{
         @extend %imgcard;
@@ -149,6 +184,9 @@ header{
         position: relative;
         left: 250px;
         bottom: 50px;
+    }
+    &__heart1:hover{
+        @include animheart1();
     }
 }
 

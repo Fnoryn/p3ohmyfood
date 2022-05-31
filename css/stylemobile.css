@@ -67,6 +67,10 @@ header .recherche {
   padding: 16px 31px;
   text-shadow: 0px 1px 0px #9356dc;
 }
+.menu__top .menu__btn:hover {
+  transform: scale(1.05);
+  transition-duration: 800ms;
+}
 
 .nav h2 {
   text-align: left;
@@ -74,6 +78,7 @@ header .recherche {
 }
 .nav .nav__bar .fa-solid {
   padding-right: 25px;
+  color: gray;
 }
 .nav .nav__bar a {
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
@@ -88,6 +93,14 @@ header .recherche {
   font-weight: bold;
   padding: 30px 45px;
 }
+.nav .nav__bar a:hover {
+  transform: scale(1.05);
+  transition-duration: 800ms;
+  background: #e4d5f6;
+}
+.nav .nav__bar a:hover .fa-solid {
+  color: #9356dc;
+}
 
 .resto {
   display: flex;
@@ -101,8 +114,8 @@ header .recherche {
 }
 .resto__new {
   position: relative;
-  bottom: 150px;
-  left: 216px;
+  bottom: 154px;
+  left: 204px;
   padding: 8px;
   border-radius: 2px;
   background-color: #99e2d0;
@@ -114,6 +127,10 @@ header .recherche {
   height: 250px;
   border-radius: 15px;
 }
+.resto__article:hover {
+  transform: scale(1.05);
+  transition-duration: 800ms;
+}
 .resto__contenu {
   padding-left: 15px;
   line-height: 7px;
@@ -122,6 +139,16 @@ header .recherche {
   position: relative;
   left: 250px;
   bottom: 50px;
+}
+.resto__heart1:hover {
+  background: -moz-linear-gradient(50deg, #9356dc, #ff79da);
+  background: -webkit-linear-gradient(50deg, #9356dc, #ff79da);
+  background: linear-gradient(50deg, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
 }
 
 .footer {
