@@ -124,7 +124,9 @@ header{
         padding-left: 20px;
     }
     &__new{
-        display: none;
+        position: relative;
+        bottom: 150px;
+        left: 216px;
         padding: 8px;
         border-radius: 2px;
         background-color: $thirdcolor;
@@ -133,7 +135,7 @@ header{
     &__article{
         background-color: #fff;
         margin: 20px;
-        height: 80%;
+        height: 250px;
         border-radius: 15px;
     }
     &__img{
@@ -141,13 +143,12 @@ header{
     }
     &__contenu{
         padding-left: 15px;
-        padding: 8px;
         line-height: 7px;
     }
-    &__btn{
-        align-items:center;
-        text-align: end;
-        padding-left: 8px;
+    &__heart1{
+        position: relative;
+        left: 250px;
+        bottom: 50px;
     }
 }
 

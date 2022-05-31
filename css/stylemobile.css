@@ -100,7 +100,9 @@ header .recherche {
   padding-left: 20px;
 }
 .resto__new {
-  display: none;
+  position: relative;
+  bottom: 150px;
+  left: 216px;
   padding: 8px;
   border-radius: 2px;
   background-color: #99e2d0;
@@ -109,18 +111,17 @@ header .recherche {
 .resto__article {
   background-color: #fff;
   margin: 20px;
-  height: 80%;
+  height: 250px;
   border-radius: 15px;
 }
 .resto__contenu {
   padding-left: 15px;
-  padding: 8px;
   line-height: 7px;
 }
-.resto__btn {
-  align-items: center;
-  text-align: end;
-  padding-left: 8px;
+.resto__heart1 {
+  position: relative;
+  left: 250px;
+  bottom: 50px;
 }
 
 .footer {
