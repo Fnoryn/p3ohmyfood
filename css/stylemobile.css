@@ -113,9 +113,9 @@ header .recherche {
   padding-left: 20px;
 }
 .resto__new {
-  position: relative;
-  bottom: 154px;
-  left: 204px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   padding: 8px;
   border-radius: 2px;
   background-color: #99e2d0;
@@ -126,6 +126,7 @@ header .recherche {
   margin: 20px;
   height: 250px;
   border-radius: 15px;
+  position: relative;
 }
 .resto__article:hover {
   transform: scale(1.05);
@@ -134,11 +135,13 @@ header .recherche {
 .resto__contenu {
   padding-left: 15px;
   line-height: 7px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 .resto__heart1 {
-  position: relative;
-  left: 250px;
-  bottom: 50px;
+  display: flex;
+  align-items: center;
 }
 .resto__heart1:hover {
   background: -moz-linear-gradient(50deg, #9356dc, #ff79da);
