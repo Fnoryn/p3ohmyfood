@@ -29,7 +29,68 @@ body{
     font-weight: 900;
 }
 
+@-webkit-keyframes menucarte {
+    0%{
+        -webkit-transform: translateY(50px);
+                transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+    }
+}
 
+@keyframes menucarte {
+    0%{
+        -webkit-transform: translateY(50px);
+                transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.menucarte{
+    -webkit-animation: menucarte 1s cubic-bezier(0.6, -0.28, 0.74, 0.05) both;
+    animation: menucarte 1s cubic-bezier(0.6, -0.28, 0.74, 0.05) both;
+}
+
+@-webkit-keyframes menu__T1{
+    0%{
+        -webkit-transform: translateX(-50px);
+                transform: translateX(-50px);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes menu__T1 {
+    0%{
+        -webkit-transform: translateX(-50px);
+                transform: translateX(-50px);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+.menu__T1{
+    -webkit-animation: menu__T1 0.5s linear both;
+    animation: menu__T1 0.5s linear both;
+}
 
 a{
     text-decoration: none;
@@ -73,6 +134,7 @@ header{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        cursor: pointer;
     }
     &__T1{
         font-family: Shrikhand;
