@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 20px 15px;
+    line-height: 25px;
+    background-color: $thirdgray;
+    color: #fff;
+    .fa-solid{
+        padding-right: 10px;
+    }
+    h2{
+        font-family: Shrikhand;
+        font-weight: lighter;
+        font-size: 20px;
+    }
+    a{
+        color: #fff;
+    }
+}
