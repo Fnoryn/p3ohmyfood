@@ -1,3 +1,4 @@
+/**style des btn **/
 @mixin btn{
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
     background:linear-gradient(to bottom, $secondarycolor 5%, $primarycolor 100%);
@@ -14,7 +15,7 @@
     padding:16px 31px;
     text-shadow:0px 1px 0px $primarycolor;
 }
-
+/** anime du coeur **/
 @mixin animheart1{
     background: -moz-linear-gradient(50deg, $primarycolor, $secondarycolor);
     background: -webkit-linear-gradient(50deg, $primarycolor, $secondarycolor);
@@ -25,7 +26,7 @@
     -webkit-text-fill-color: transparent;
     font-weight: 900;
 }
-
+/** anime pour scale un élément + anime pour changé ça couleur**/
 @mixin animscale {
     transform: scale(1.05);
     transition-duration: 800ms;
@@ -34,7 +35,7 @@
 @mixin animebgcolor {
     background: lighten($color: $primarycolor, $amount: 30);
 }
-
+/** style  main page **/
 @mixin btn__F {
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
     background-color: #fff;
@@ -72,6 +73,7 @@
     overflow: hidden;
 }
 
+/** anime article 1/1 **/
 @-webkit-keyframes anim {
     0%{
         -webkit-transform: translateY(50px);
@@ -102,11 +104,10 @@
     .a-#{$i}{
         -webkit-animation: anim 1s ease-in both;
         animation: anim 1s ease-in both;
-        animation-delay: $i*1s;
+        animation-delay: 1s*$i;
     }
 }
-
-
+/** anime titre (entrée etc) **/
 
 @-webkit-keyframes menu__T1{
     0%{
