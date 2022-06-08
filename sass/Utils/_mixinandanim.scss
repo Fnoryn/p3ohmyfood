@@ -72,7 +72,7 @@
     overflow: hidden;
 }
 
-@-webkit-keyframes menucarte {
+@-webkit-keyframes anim {
     0%{
         -webkit-transform: translateY(50px);
                 transform: translateY(50px);
@@ -85,7 +85,7 @@
     }
 }
 
-@keyframes menucarte {
+@keyframes anim {
     0%{
         -webkit-transform: translateY(50px);
                 transform: translateY(50px);
@@ -98,10 +98,15 @@
     }
 }
 
-.menucarte{
-    -webkit-animation: menucarte 1s cubic-bezier(0.6, -0.28, 0.74, 0.05) both;
-    animation: menucarte 1s cubic-bezier(0.6, -0.28, 0.74, 0.05) both;
+@for $i from 1 to 10 {
+    .a-#{$i}{
+        -webkit-animation: anim 1s ease-in both;
+        animation: anim 1s ease-in both;
+        animation-delay: $i*1s;
+    }
 }
+
+
 
 @-webkit-keyframes menu__T1{
     0%{
