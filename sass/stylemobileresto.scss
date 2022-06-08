@@ -1,8 +1,8 @@
 /** général **/
-@import url(Utils/_variables.scss);
-@import url(Utils/_fonctions.scss);
-@import url(Utils/_mixinandanim.scss);
-@import url(Base/_normes.scss);
+
+@use  './Utils/_mixinandanim.scss' as mixinstyle;
+@use './Utils/_variables.scss' as varcouleurs;
+@use './Base/normes';
 @import url(Layout/_BEMfooter.scss);
 
 
@@ -36,7 +36,7 @@ header{
 .mainmenu{
     margin-top: -60px;
     border-radius: 32px 32px 0px 0px;
-    background-color: $secondgray;
+    background-color: varcouleurs.$secondgray;
     position: relative;
     &__header{
         padding: 16px 32px 0px 16px;
@@ -50,7 +50,7 @@ header{
         font-weight: bold;
     }
     &__heart1:hover{
-        @include animheart1();
+        @include mixinstyle.animheart1();
     }
 }
 
@@ -67,7 +67,7 @@ header{
         text-transform: uppercase;
         padding-bottom: 8px;
         font-weight: normal;
-        border-bottom: 3px solid $thirdcolor;
+        border-bottom: 3px solid varcouleurs.$thirdcolor;
         width: 11%;
     }
 }
@@ -84,16 +84,16 @@ header{
     cursor: pointer;
 
     &__div{
-        @include menu__txt();
+        @include mixinstyle.menu__txt();
     }
     
     &__T2{
         margin: 0;
-        @include menu__txt();
+        @include mixinstyle.menu__txt();
     }
     &__p{
         margin: 0;
-        @include menu__txt();
+        @include mixinstyle.menu__txt();
     }
 
     &__prix{
@@ -113,7 +113,7 @@ header{
     border-radius: 130px;
     font-size: large;
     cursor: pointer;
-    background: linear-gradient(to bottom, $secondarycolor 10%, $primarycolor 100%);
+    background: linear-gradient(to bottom, varcouleurs.$secondarycolor 10%, varcouleurs.$primarycolor 100%);
     color: #fff;
     display: inline-block;
     width: 180px;

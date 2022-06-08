@@ -1,3 +1,119 @@
+@charset "UTF-8";
+@import url(Layout/_BEMfooter.scss);
+/**style des btn **/
+/** anime du coeur **/
+/** anime pour scale un élément + anime pour changé ça couleur**/
+/** style  main page **/
+/** anime article 1/1 **/
+@-webkit-keyframes anim {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes anim {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/** test **/
+.a-1 {
+  -webkit-animation: anim 1s ease-in both;
+  animation: anim 1s ease-in both;
+  animation-delay: 0.2s;
+}
+
+.a-2 {
+  -webkit-animation: anim 1s ease-in both;
+  animation: anim 1s ease-in both;
+  animation-delay: 0.4s;
+}
+
+.a-3 {
+  -webkit-animation: anim 1s ease-in both;
+  animation: anim 1s ease-in both;
+  animation-delay: 0.6s;
+}
+
+.a-4 {
+  -webkit-animation: anim 1s ease-in both;
+  animation: anim 1s ease-in both;
+  animation-delay: 0.8s;
+}
+
+.a-5 {
+  -webkit-animation: anim 1s ease-in both;
+  animation: anim 1s ease-in both;
+  animation-delay: 1s;
+}
+
+.a-6 {
+  -webkit-animation: anim 1s ease-in both;
+  animation: anim 1s ease-in both;
+  animation-delay: 1.2s;
+}
+
+.a-7 {
+  -webkit-animation: anim 1s ease-in both;
+  animation: anim 1s ease-in both;
+  animation-delay: 1.4s;
+}
+
+.a-8 {
+  -webkit-animation: anim 1s ease-in both;
+  animation: anim 1s ease-in both;
+  animation-delay: 1.6s;
+}
+
+.a-9 {
+  -webkit-animation: anim 1s ease-in both;
+  animation: anim 1s ease-in both;
+  animation-delay: 1.8s;
+}
+
+/** anime titre (entrée etc) **/
+@-webkit-keyframes menu__T1 {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes menu__T1 {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.menu__T1 {
+  -webkit-animation: menu__T1 0.5s linear both;
+  animation: menu__T1 0.5s linear both;
+}
+
 body {
   font-family: roboto;
   margin: 0;
@@ -152,24 +268,4 @@ header .recherche {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  padding: 0px 0px 20px 15px;
-  line-height: 25px;
-  background-color: #353535;
-  color: #fff;
-}
-.footer .fa-solid {
-  padding-right: 10px;
-}
-.footer h2 {
-  font-family: Shrikhand;
-  font-weight: lighter;
-  font-size: 20px;
-}
-.footer a {
-  color: #fff;
 }

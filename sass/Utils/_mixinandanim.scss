@@ -1,7 +1,9 @@
+@use '../Utils/_variables.scss' as varcouleurs;
+
 /**style des btn **/
 @mixin btn{
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
-    background:linear-gradient(to bottom, $secondarycolor 5%, $primarycolor 100%);
+    background:linear-gradient(to bottom, varcouleurs.$secondarycolor 5%, varcouleurs.$primarycolor 100%);
     border-radius:25px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -13,13 +15,13 @@
     font-weight:bold;
     width: 70%;
     padding:16px 31px;
-    text-shadow:0px 1px 0px $primarycolor;
+    text-shadow:0px 1px 0px varcouleurs.$primarycolor;
 }
 /** anime du coeur **/
 @mixin animheart1{
-    background: -moz-linear-gradient(50deg, $primarycolor, $secondarycolor);
-    background: -webkit-linear-gradient(50deg, $primarycolor, $secondarycolor);
-    background: linear-gradient(50deg, $primarycolor, $secondarycolor);
+    background: -moz-linear-gradient(50deg, varcouleurs.$primarycolor, varcouleurs.$secondarycolor);
+    background: -webkit-linear-gradient(50deg, varcouleurs.$primarycolor, varcouleurs.$secondarycolor);
+    background: linear-gradient(50deg, varcouleurs.$primarycolor, varcouleurs.$secondarycolor);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -33,7 +35,7 @@
 }
 
 @mixin animebgcolor {
-    background: lighten($color: $primarycolor, $amount: 30);
+    background: lighten($color: varcouleurs.$primarycolor, $amount: 30);
 }
 /** style  main page **/
 @mixin btn__F {
@@ -50,22 +52,7 @@
     padding: 30px 45px;
 }
 
-%block{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
 
-}
-
-%imgcard{
-    width: 100%;
-    height: 170px;
-    object-fit: cover;
-    object-position: 0% 60%;
-    border-radius: 15px 15px 0px 0px;
-}
 
 @mixin menu__txt {
     white-space: nowrap;
@@ -99,12 +86,12 @@
         opacity: 1;
     }
 }
-
+/** test **/ 
 @for $i from 1 to 10 {
     .a-#{$i}{
         -webkit-animation: anim 1s ease-in both;
         animation: anim 1s ease-in both;
-        animation-delay: 1s*$i;
+        animation-delay: 0.2s*$i;
     }
 }
 /** anime titre (entrée etc) **/
