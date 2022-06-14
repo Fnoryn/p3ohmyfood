@@ -1,0 +1,30 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "ohmyfoodp3",
+  "main": "index.js",
+  "scripts": {
+    "sassmain": "sass ./sass/stylemobile.scss:./css/stylemobile.css -w --style expanded",
+    "sassmainprod": "sass ./sass/stylemobile.scss:./css/stylemobile.css --style compressed && postcss ./css/stylemobile.css --use autoprefixer -d ./css",
+    "prefixmain": "postcss ./css/stylemobile.css --use autoprefixer -d ./css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fnoryn/p3ohmyfood.git"
+  },
+  "keywords": [
+    "p3"
+  ],
+  "author": "fabien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fnoryn/p3ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Fnoryn/p3ohmyfood#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.52.3"
+  }
+}
