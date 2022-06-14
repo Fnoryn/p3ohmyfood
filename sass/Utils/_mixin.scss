@@ -1,7 +1,5 @@
 @use '../Utils/_variables.scss' as varcouleurs;
 
-
-
 /**style des btn **/
 @mixin btn{
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
@@ -35,8 +33,6 @@
     font-weight: bold;
     padding: 30px 45px;
 }
-
-
 
 @mixin menu__txt {
     white-space: nowrap;

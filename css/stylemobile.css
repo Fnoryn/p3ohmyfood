@@ -1,7 +1,8 @@
 @charset "UTF-8";
+/** couleurs du site **/
 /**style des btn **/
 /** style  main page **/
-/** animation loader **/
+/** animation loading **/
 @keyframes loading {
   0% {
     transform: translateY(0);
@@ -79,7 +80,7 @@
     opacity: 1;
   }
 }
-/** test **/
+/** boucle for pour apparition des plats **/
 .a-1 {
   -webkit-animation: anim 1s ease-in both;
   animation: anim 1s ease-in both;
@@ -170,6 +171,70 @@
   animation: menu__T1 0.5s linear both;
 }
 
+/** importation des styles **/
+/** %placeholder des images **/
+.resto__img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  object-position: 0% 60%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+/** mise en page des card restaurants **/
+.resto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #eaeaea;
+  margin-top: 30px;
+}
+.resto h2 {
+  padding-left: 20px;
+}
+.resto__new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px;
+  border-radius: 2px;
+  background-color: #99e2d0;
+  color: #00644b;
+}
+.resto__article {
+  background-color: #fff;
+  margin: 20px;
+  height: 250px;
+  border-radius: 15px;
+  position: relative;
+}
+.resto__article:hover {
+  transform: scale(1.05);
+  transition-duration: 800ms;
+}
+.resto__contenu {
+  padding-left: 15px;
+  line-height: 7px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.resto__heart1 {
+  display: flex;
+  align-items: center;
+}
+.resto__heart1:hover {
+  background: -moz-linear-gradient(50deg, #9356dc, #ff79da);
+  background: -webkit-linear-gradient(50deg, #9356dc, #ff79da);
+  background: linear-gradient(50deg, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+/** mise en place des normes du site **/
 body {
   font-family: roboto;
   margin: 0;
@@ -192,6 +257,8 @@ a {
   color: black;
 }
 
+/** importation des couleurs **/
+/** style du footer **/
 .footer {
   display: flex;
   flex-direction: column;
@@ -212,6 +279,7 @@ a {
   color: #fff;
 }
 
+/** style du loading screen **/
 .loading {
   z-index: 1;
   position: absolute;
@@ -242,6 +310,8 @@ a {
   animation: loader-cube 2s infinite ease-in;
 }
 
+/** importation des styles **/
+/** %placeholder mise en page**/
 .nav, .menu__top, header {
   width: 100%;
   display: flex;
@@ -250,6 +320,7 @@ a {
   text-align: center;
 }
 
+/** header **/
 header .logo__img {
   width: 70%;
   padding: 5px;
@@ -260,6 +331,7 @@ header .recherche {
   padding: 15px;
 }
 
+/** réservez le menu... + btn explorer nos restaurants **/
 .menu__top {
   align-items: center;
   padding: 15px 0px 20px 0px;
@@ -286,6 +358,7 @@ header .recherche {
   transition-duration: 800ms;
 }
 
+/** fonctionnement **/
 .nav h2 {
   text-align: left;
   padding: 0px 0px 0px 10px;

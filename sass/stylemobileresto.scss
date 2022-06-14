@@ -3,8 +3,9 @@
 @use  './Utils/_mixin.scss' as mixinstyle;
 @use './Utils/animation.scss' as anim;
 @use './Utils/_variables.scss' as varcouleurs;
+@use './Pages/pagerestos.scss';
 @use './Base/_normes.scss';
-@use './Layout/_BEMfooter.scss';
+@use './Layout/_BEMreusableblock.scss';
 
 /** header**/
 
@@ -33,6 +34,7 @@ header{
     object-fit: cover;
 }
 
+/** nom du restaurant + entrées/plats/desserts **/
 .mainmenu{
     margin-top: -60px;
     border-radius: 32px 32px 0px 0px;
@@ -71,61 +73,7 @@ header{
         width: 11%;
     }
 }
-
-.menucarte{
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 12px;
-    margin: 16px 0px;
-    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    cursor: pointer;
-
-    &__div{
-        @include mixinstyle.menu__txt();
-        padding: 16px;
-    }
-    
-    &__T2{
-        margin: 0;
-        @include mixinstyle.menu__txt();
-    }
-    &__p{
-        margin: 0;
-        @include mixinstyle.menu__txt();
-    }
-
-    &__prix{
-        font-weight: bold;
-        display: flex;
-        align-items: flex-end;
-        padding: 0px 16px 10px 0px;
-    }
-    &__checkbox{
-        background: varcouleurs.$thirdcolor;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 0%;
-        transition-duration: 0.5s;
-        .fa-solid{
-            color: #fff;
-            font-weight: lighter;
-            font-size: 17px;
-            transform: rotate(0);
-            transition-duration: 0.5s;
-        }
-    }
-    &__checkbox:hover{
-        width: 20%;
-        .fa-solid:hover{
-            transform: rotate(180deg);
-        }
-    }
-}
-
-
+/** btn commander **/
 .maincommander{
     display: flex;
     justify-content: center;
@@ -142,5 +90,8 @@ header{
     width: 180px;
     height: 15%;
     text-align: center;
+    }
+    &__btn:hover{
+        @include anim.animscale();
     }
 }

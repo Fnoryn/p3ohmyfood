@@ -1,9 +1,12 @@
+/** importation des styles **/
 @use  './Utils/_mixin.scss' as mixinstyle;
 @use './Utils/animation.scss' as anim;
 @use './Utils/_variables.scss' as varcouleurs;
+@use './Pages/mainpageresto.scss';
 @use './Base/_normes.scss';
-@use './Layout/_BEMfooter.scss';
+@use './Layout/_BEMreusableblock.scss';
 
+/** %placeholder mise en page**/
 
 %block{
     width: 100%;
@@ -14,7 +17,7 @@
 
 }
 
-
+/** header **/
 
 header{
     @extend %block;
@@ -28,7 +31,7 @@ header{
         padding: 15px;
     }
 }
-
+/** réservez le menu... + btn explorer nos restaurants **/
 .menu__top{
     @extend %block;
     align-items: center;
@@ -41,7 +44,7 @@ header{
         @include anim.animscale();
     }
 }
-
+/** fonctionnement **/
 .nav{
     @extend %block;
     h2{

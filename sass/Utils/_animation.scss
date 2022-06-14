@@ -1,6 +1,6 @@
 @use '../Utils/variables.scss' as varcouleurs;
 
-/** animation loader **/
+/** animation loading **/
 @keyframes loading {
     0%{
         transform: translateY(0);
@@ -108,7 +108,7 @@
         opacity: 1;
     }
 }
-/** test **/ 
+/** boucle for pour apparition des plats **/ 
 @for $i from 1 to 11 {
     .a-#{$i}{
         -webkit-animation: anim 1s ease-in both;

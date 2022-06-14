@@ -1,6 +1,7 @@
+/** importation des couleurs **/
 @use '../Utils/variables' as varcouleurs;
 
-
+/** style du footer **/
 .footer{
     display: flex;
     flex-direction: column;
@@ -21,6 +22,7 @@
     }
 }
 
+/** style du loading screen **/
 .loading{
     z-index: 1;
     position: absolute;
