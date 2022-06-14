@@ -17,6 +17,7 @@
 
 }
 
+
 /** header **/
 
 header{
@@ -28,6 +29,7 @@ header{
     .recherche{
         font-weight: bold;
         background-color: varcouleurs.$firstgray;
+        box-shadow: inset 4px 4px 16px rgba(0, 0, 0, 0.1);
         padding: 15px;
     }
 }
@@ -61,7 +63,6 @@ header{
             @include mixinstyle.btn__F();
         }
         a:hover{
-            @include anim.animscale();
             @include anim.animebgcolor();
             .fa-solid{
                 color: varcouleurs.$primarycolor;
@@ -70,12 +71,13 @@ header{
     }
     &__num{
         background: varcouleurs.$primarycolor;
-        border-radius: 50%;
-        padding: 5px;
-        font-size: 10pt;
+        border-radius: 100%;
+        position: relative;
+        left: 13px;
+        padding: 8px;
+        font-size: 8pt;
         color: #fff;
         margin-right: 1px;
-        justify-content: flex-start;
     }
 }
 

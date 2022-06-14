@@ -6,7 +6,10 @@
   "scripts": {
     "sassmain": "sass ./sass/stylemobile.scss:./css/stylemobile.css -w --style expanded",
     "sassmainprod": "sass ./sass/stylemobile.scss:./css/stylemobile.css --style compressed && postcss ./css/stylemobile.css --use autoprefixer -d ./css",
-    "prefixmain": "postcss ./css/stylemobile.css --use autoprefixer -d ./css"
+    "prefixmain": "postcss ./css/stylemobile.css --use autoprefixer -d ./css",
+    "sasspageresto": "sass ./sass/stylemobileresto.scss:./css/stylemobileresto.css -w --style expanded",
+    "sasspagerestoprod": "sass ./sass/stylemobileresto.scss:./css/stylemobileresto.css --style compressed && postcss ./css/stylemobileresto.css --use autoprefixer -d ./css",
+    "prefixpageresto": "postcss ./css/stylemobileresto.css --use autoprefixer -d ./css"
   },
   "repository": {
     "type": "git",
