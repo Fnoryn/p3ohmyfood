@@ -1,10 +1,10 @@
 /** général **/
 
-@use  './Utils/_mixinandanim.scss' as mixinstyle;
+@use  './Utils/_mixin.scss' as mixinstyle;
+@use './Utils/animation.scss' as anim;
 @use './Utils/_variables.scss' as varcouleurs;
-@use './Base/normes';
-@import url(Layout/_BEMfooter.scss);
-
+@use './Base/_normes.scss';
+@use './Layout/_BEMfooter.scss';
 
 /** header**/
 
@@ -50,7 +50,7 @@ header{
         font-weight: bold;
     }
     &__heart1:hover{
-        @include mixinstyle.animheart1();
+        @include anim.animheart1();
     }
 }
 
@@ -74,7 +74,6 @@ header{
 
 .menucarte{
     background-color: #fff;
-    padding: 16px;
     display: flex;
     justify-content: space-between;
     border-radius: 12px;
@@ -85,6 +84,7 @@ header{
 
     &__div{
         @include mixinstyle.menu__txt();
+        padding: 16px;
     }
     
     &__T2{
@@ -99,10 +99,33 @@ header{
     &__prix{
         font-weight: bold;
         display: flex;
-        align-items: end;
-        padding-left: 8px;
+        align-items: flex-end;
+        padding: 0px 16px 10px 0px;
+    }
+    &__checkbox{
+        background: varcouleurs.$thirdcolor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0%;
+        transition-duration: 0.5s;
+        .fa-solid{
+            color: #fff;
+            font-weight: lighter;
+            font-size: 17px;
+            transform: rotate(0);
+            transition-duration: 0.5s;
+        }
+    }
+    &__checkbox:hover{
+        width: 20%;
+        .fa-solid:hover{
+            transform: rotate(180deg);
+        }
     }
 }
+
+
 .maincommander{
     display: flex;
     justify-content: center;

@@ -1,0 +1,47 @@
+@use '../Utils/_variables.scss' as varcouleurs;
+
+
+
+/**style des btn **/
+@mixin btn{
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+    background:linear-gradient(to bottom, varcouleurs.$secondarycolor 5%, varcouleurs.$primarycolor 100%);
+    border-radius:25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:inline-block;
+    cursor:pointer;
+    border: none;
+    color:#ffffff;
+    font-size:15px;
+    font-weight:bold;
+    width: 70%;
+    padding:16px 31px;
+    text-shadow:0px 1px 0px varcouleurs.$primarycolor;
+}
+
+
+/** style  main page **/
+@mixin btn__F {
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 30px 45px;
+}
+
+
+
+@mixin menu__txt {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
