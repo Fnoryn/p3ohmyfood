@@ -8,24 +8,32 @@
 .menucarte{
     background-color: #fff;
     display: flex;
-    justify-content: space-between;
     border-radius: 12px;
     margin: 16px 0px;
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     cursor: pointer;
-
     &__div{
         @include mixinstyle.menu__txt();
-        padding: 16px;
+        padding: 14px;
+        display: flex;
+        line-height: 15pt;
+        justify-content: space-between;
+        width: 100%;
     }
-    
+    &__hp{
+        display: flex;
+        flex-direction: column;
+        @include mixinstyle.menu__txt();
+    }
     &__T2{
         margin: 0;
+        font-size: 13pt;
         @include mixinstyle.menu__txt();
     }
     &__p{
         margin: 0;
+        font-size: 11pt;
         @include mixinstyle.menu__txt();
     }
 
@@ -33,7 +41,6 @@
         font-weight: bold;
         display: flex;
         align-items: flex-end;
-        padding: 0px 16px 10px 0px;
     }
     &__checkbox{
         background: varcouleurs.$thirdcolor;
@@ -44,7 +51,6 @@
         transition-duration: 0.5s;
         .fa-solid{
             color: #fff;
-            font-weight: lighter;
             font-size: 17px;
             transform: rotate(0);
             transition-duration: 0.5s;

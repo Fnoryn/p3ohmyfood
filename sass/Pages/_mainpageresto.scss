@@ -5,7 +5,7 @@
 /** %placeholder des images **/
 %imgcard{
     width: 100%;
-    height: 170px;
+    max-height: 170px;
     object-fit: cover;
     object-position: 0% 60%;
     border-radius: 15px 15px 0px 0px;

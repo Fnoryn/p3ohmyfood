@@ -23,8 +23,9 @@
 header{
     @extend %block;
     .logo__img{
-        width: 70%;
-        padding: 5px;
+        width: 50%;
+        padding: 7px;
+        margin-top: 14px;
     }
     .recherche{
         font-weight: bold;
