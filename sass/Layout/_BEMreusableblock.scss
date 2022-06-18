@@ -9,6 +9,16 @@
     line-height: 25px;
     background-color: varcouleurs.$thirdgray;
     color: #fff;
+    ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        @media screen and(min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
     .fa-solid{
         padding-right: 10px;
     }

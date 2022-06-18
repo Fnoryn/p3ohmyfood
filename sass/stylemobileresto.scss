@@ -22,7 +22,11 @@ header{
             font-size: 16pt;
         }
         .top__logo{
-            width: 50%;
+            width: 40%;
+            padding: 8px;
+            @media screen and(min-width: 768px) {
+                max-width: 300px;
+            }
         }
     }
 }
@@ -40,6 +44,9 @@ header{
     border-radius: 32px 32px 0px 0px;
     background-color: varcouleurs.$secondgray;
     position: relative;
+    @media screen and(min-width: 768px) {
+        font-size: 15pt;
+    }
     &__header{
         padding: 16px 32px 0px 16px;
         display: flex;
@@ -49,22 +56,23 @@ header{
     }
     &__T1{
         font-family: Shrikhand;
-        font-weight: bold;
     }
     &__heart1:hover{
         @include anim.animheart1();
     }
 }
-
 .menus{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    @media screen and(min-width: 768px) {
+        justify-content: center;
+        align-items: center;
+    }
 }
-
 .menu{
     max-width: 100%;
     overflow: hidden;
     padding: 0px 16px;
-
     &__T1{
         text-transform: uppercase;
         padding-bottom: 8px;

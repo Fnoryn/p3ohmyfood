@@ -205,6 +205,11 @@ a {
   overflow: hidden;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  .menucarte {
+    width: 550px;
+  }
+}
 .menucarte__div {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -272,6 +277,18 @@ a {
   background-color: #353535;
   color: #fff;
 }
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+@media screen and (min-width: 768px) {
+  .footer ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 .footer .fa-solid {
   padding-right: 10px;
 }
@@ -330,7 +347,13 @@ header .top .fa-solid {
   font-size: 16pt;
 }
 header .top .top__logo {
-  width: 50%;
+  width: 40%;
+  padding: 8px;
+}
+@media screen and (min-width: 768px) {
+  header .top .top__logo {
+    max-width: 300px;
+  }
 }
 
 .top__BG {
@@ -347,6 +370,11 @@ header .top .top__logo {
   background-color: #f6f6f6;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .mainmenu {
+    font-size: 15pt;
+  }
+}
 .mainmenu__header {
   padding: 16px 32px 0px 16px;
   display: flex;
@@ -356,7 +384,6 @@ header .top .top__logo {
 }
 .mainmenu__T1 {
   font-family: Shrikhand;
-  font-weight: bold;
 }
 .mainmenu__heart1:hover {
   background: -moz-linear-gradient(50deg, #9356dc, #ff79da);
@@ -370,7 +397,14 @@ header .top .top__logo {
 }
 
 .menus {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .menus {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .menu {

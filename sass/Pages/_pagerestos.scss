@@ -13,6 +13,9 @@
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     cursor: pointer;
+    @media screen and(min-width: 768px) {
+        width: 550px;
+    }
     &__div{
         @include mixinstyle.menu__txt();
         padding: 14px;
