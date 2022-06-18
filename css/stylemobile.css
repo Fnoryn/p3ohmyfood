@@ -226,8 +226,8 @@
   position: relative;
 }
 .resto__article:hover {
-  transform: scale(1.05);
-  transition-duration: 800ms;
+  transform: scale(1.02);
+  transition-duration: 500ms;
 }
 .resto__contenu {
   padding-left: 15px;
@@ -389,8 +389,8 @@ header .recherche {
   text-shadow: 0px 1px 0px #9356dc;
 }
 .menu__top .menu__btn:hover {
-  transform: scale(1.05);
-  transition-duration: 800ms;
+  transform: scale(1.02);
+  transition-duration: 500ms;
 }
 
 /** fonctionnement **/

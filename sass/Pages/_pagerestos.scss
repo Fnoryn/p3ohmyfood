@@ -62,7 +62,8 @@
     &__checkbox:hover{
         width: 20%;
         .fa-solid:hover{
-            transform: rotate(180deg);
+            transform: rotate(360deg);
+            transition-duration: 0.5s;
         }
     }
 }

@@ -14,19 +14,23 @@ header{
         width: 100%;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
+        // align-items: center;
+        // justify-content: space-around;
         height: 60px;
+        &__btnback{
+            display: flex;
+            width: 25%;
+            align-items: center;
+            padding-left: 25px;
+        }
         .fa-solid{
-            font-weight: bold;
             font-size: 16pt;
         }
-        .top__logo{
-            width: 40%;
-            padding: 8px;
-            @media screen and(min-width: 768px) {
-                max-width: 300px;
-            }
+        &__logo{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
@@ -48,14 +52,16 @@ header{
         font-size: 15pt;
     }
     &__header{
-        padding: 16px 32px 0px 16px;
+        padding: 16px 32px 0px 32px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        cursor: pointer;
     }
     &__T1{
         font-family: Shrikhand;
+    }
+    &__heart1{
+        cursor: pointer;
     }
     &__heart1:hover{
         @include anim.animheart1();

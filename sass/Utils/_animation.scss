@@ -73,8 +73,8 @@
 }
 /** anime pour scale un élément + anime pour changé ça couleur**/
 @mixin animscale {
-    transform: scale(1.05);
-    transition-duration: 800ms;
+    transform: scale(1.02);
+    transition-duration: 500ms;
 }
 
 @mixin animebgcolor {
